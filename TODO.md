@@ -1,0 +1,2 @@
+- Create as node module
+- Why is qSort static?
