@@ -1,12 +1,20 @@
-const SortableArray = require("./SortableArray");
+const { MultiSortArray } = require("./lib/cjs/index");
+
 const { performance } = require("perf_hooks");
 
-const test = new SortableArray(10000);
+const test = new MultiSortArray();
+
+test.fillWithRandom(10000);
+
+// Native Array.prototype.sort
+let start = performance.now();
+test.sort();
+console.log("Native: ", performance.now() - start + "ms");
 
 test.fillWithRandom();
 
 // Bubble Sort
-let start = performance.now();
+start = performance.now();
 test.bubbleSort();
 console.log("Bubble: ", performance.now() - start + "ms");
 

@@ -1,0 +1,38 @@
+{
+  "name": "multisort-array",
+  "version": "1.0.0",
+  "description": "Extends the native JavaScript Array object with various sorting methods",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "prepublish": "npm run tsc",
+    "test": "test",
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaGeekyMongrel/MultiSortArray.git"
+  },
+  "keywords": [
+    "Array",
+    "sort",
+    "bubble",
+    "selection",
+    "insertion",
+    "shell",
+    "merge",
+    "quick"
+  ],
+  "author": "DaGeekyMongrel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaGeekyMongrel/MultiSortArray/issues"
+  },
+  "homepage": "https://github.com/DaGeekyMongrel/MultiSortArray#readme",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
