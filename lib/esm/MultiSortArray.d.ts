@@ -4,7 +4,7 @@ export declare class MultiSortArray {
     defaultGaps: number[];
     fillWithRandom(length?: number): void;
     swapItems(index1: number, index2: number): void;
-    sort(...args: any): void;
+    sort(): void;
     bubbleSort(): void;
     selectionSort(): void;
     insertionSort(): void;

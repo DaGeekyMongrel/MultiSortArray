@@ -1,5 +1,5 @@
-import mergeSubarrays from "./mergeSubarrays";
-import qSort from "./qSort";
+import mergeSubarrays from './mergeSubarrays';
+import qSort from './qSort';
 
 export class MultiSortArray {
   constructor(...args: any) {
@@ -22,8 +22,8 @@ export class MultiSortArray {
     this.items[index2] = temp;
   }
 
-  sort(...args: any) {
-    this.items.sort(...args);
+  sort() {
+    this.items.sort((a, b) => a - b);
   }
 
   bubbleSort() {
